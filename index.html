@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List App</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+<div class="container">
+    <h1>To-do List</h1>
+    <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Add a new todo..." />
+        <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <input type="date" id="dueDate" />
+        <input type="time" id="dueTime" />
+        <input type="text" id="reminder" placeholder="Reminder (e.g., 10 minutes before)" />
+        <button id="addTodoBtn">Add</button>
+        <button id="showCompletedBtn">Show Completed Tasks</button>
+        <button id="showCancelledBtn">Show Cancelled Tasks</button>
+    </div>
+    <ul id="todoList"></ul>
+</div>
+<div class="container">
+    <h1>Key Features of Our Todo List App</h1>
+    <ul class="features-list">
+        <li><strong>Quick Task Addition:</strong> Easily add new tasks using the input field and “Add” button, or by pressing Enter.</li>
+        <li><strong>Instant Task Deletion:</strong> Remove tasks effortlessly with a delete button next to each item.</li>
+        <li><strong>Organized Task Display:</strong> View tasks in a clean, structured list format for easy management.</li>
+        <li><strong>Responsive Design:</strong> Enjoy a modern, adaptable interface that works seamlessly on various devices.</li>
+        <li><strong>User-Friendly Interface:</strong> Simple controls and visual feedback enhance ease of use and navigation.</li>
+        <li><strong>Task Prioritization:</strong> Set task priority levels to categorize tasks by importance.</li>
+        <li><strong>Due Dates & Times:</strong> Assign due dates and times to tasks and view them accordingly.</li>
+        <li><strong>Reminders:</strong> Set reminders for tasks to get notified before the due time.</li>
+        <li><strong>Task Completion:</strong> Mark tasks as done with a checkbox and visually differentiate completed tasks.</li>
+        <li><strong>Task Status Filtering:</strong> View tasks filtered by their status: completed or cancelled.</li>
+    </ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
